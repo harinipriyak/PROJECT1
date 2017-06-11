@@ -1,0 +1,58 @@
+div.scrollmenu {
+    background-color: #FF6600;
+    overflow: auto;
+    white-space: nowrap;
+
+   
+}
+
+div.scrollmenu a {
+    MARGIN-LEFT:80PX;
+    display: inline-block;
+    color: white;
+    text-align: CENTER;
+    font-size:30px;
+    padding: 7px;
+  
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+
+div.scrollmenu1 {
+    background-color: #FF6600;
+    overflow:auto;
+    white-space: nowrap;
+
+   
+}
+
+div.scrollmenu1 a {
+    MARGIN-LEFT:1PX;
+    display: inline-block;
+    color: white;
+    text-align: right;
+    font-size:30px;
+    padding: 7px;
+  
+    text-decoration: none;
+}
+
+div.scrollmenu1 a:hover {
+    background-color: #777;
+}
+
+
+
+div.scrollmenu2 a {
+MARGIN-LEFT:1PX;
+display: inline-block;
+color: white;
+text-align: center;
+font-size:30px;
+padding: 7px;
+text-decoration: none;
+}

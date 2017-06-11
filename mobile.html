@@ -1,0 +1,352 @@
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="vertical-menu.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+margin: 10px 0;
+}
+.navbar-inverse {
+background-color: #fff;
+border-color: #fff;
+}
+.brand-name {
+font-family: 'Josefin Slab', serif;
+font-size: 47px;
+font-weight: bold;
+color: #444;
+text-decoration: none;
+}
+.nav-container {
+padding-top: 8px;
+}
+.navbar-custom {
+font-size: 30px;
+background-color: #FFF;
+}
+.navbar-nav > li{
+padding-left:5px;
+}
+.navbar-default{
+background-color:red;
+border-color: green;
+}
+.navbar-light .navbar-toggle .icon-bar {
+background-color: black;
+}
+.div1 {
+overflow: auto;
+margin-left:150px;
+margin-right:150px;
+background-color:#ccc;
+color:blue;
+font-size:40px;
+}
+.col-div{
+width:75%;
+height:400px;
+margin-left:150px;
+margin-right:150px;
+background-color:#000;
+}
+.con1{
+max-width:100%;
+margin:20px;
+padding:1em;
+background-color:#4D330B;
+}
+.con2{
+max-width:100%;
+padding:1em;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+/* Slideshow container */
+.slideshow-container {
+max-width:100%;
+position: relative;
+margin: auto;
+}
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+height: 13px;
+width: 13px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active {
+background-color: #717171;
+}
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+/* linkedin */
+.fa-linkedin {
+background: #55ACEE;
+color: white;
+}
+/* google*/
+.fa-google {
+background: #CC3333;
+color: white;
+}
+.icdiv{
+width:1px;
+}
+table,td {
+padding: 20px;
+}
+footer{
+padding: 1em;
+color: white;
+background-color:#336699;
+clear: left;
+text-align:left;
+font-size:30px;
+}
+.CONTAINER {
+background-color: #C3C4C6;
+}
+.panel-footer{
+padding: 1em;
+color: white;
+background-color:#336699;
+clear: left;
+text-align:left;
+font-size:30px;
+}
+</style>
+</head>
+<body background="back.jpg">
+<nav class="navbar navbar-light" style="background-color: #ff3300;">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" color="#000">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#"><img src="ft.png" style=width:130px;height:60px;margin-top:15px;margin-bottom:10px;"></a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li><a href="#"><b><font color="#000">ABOUT US</font></b></a></li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#"><b><font color="#000">PRODUCTS AND SERVICES</font></b><span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="#">Quality policy</a></li>
+<li><a href="#">Services</a></li>
+</ul>
+</li>
+<li><a href="#"><font color="#000"><b>ENQUIRY</b></font></a></li>
+<li><a href="#"><font color="#000"><b>CONTACT US</b></font></a></li>
+</ul>
+<form class="navbar-form navbar-right">
+<div class="input-group">
+<input type="text" class="form-control" placeholder="Search">
+<div class="input-group-btn">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</div>
+</div>
+</form>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#"><font color="#000"><b> Sign Up</b></font></a></li>
+<li><a href="#"> <font color="#000"><b>Login</b></font></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 3</div>
+<img src="s2.jpg" style="width:100%;height:25%">
+<div class="text"></div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">2 / 3</div>
+<img src="s3.jpg" style="width:100%;height:25%">
+<div class="text"></div>
+</div>
+<div class="mySlides fade">
+<div class="numbertext">3 / 3</div>
+<img src="s1.jpg" style="width:100%;height:25%">
+<div class="text"></div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="container">
+<div class="row">
+<div class="col-md-7"><FONT COLOR="#11648B" SIZE="5" STYLE="MARGIN-LEFT:0PX;"><br>ABOUT FLAWLESS ENGINEERING SOLUTIONS</FONT></div>
+<div class="col-md-5"><img src="conimg.jpg" align="right" style="width:250px;height:80px;margin-top:10px;"></div>
+</div>
+<div class="row">
+<div class="col-md-12"><p><FONT COLOR="#000" SIZE="2" STYLE="MARGIN-LEFT:0PX;"><B>Flawless engineering solutions private limited started in july 2004 by qualified and experienced engineers by focussing on low cost automation solutions to customer as per their process specific needs.Initially company started as an engineering company.</b>
+</font></p></div>
+</div>
+</DIV>
+<br>
+<br>
+<h2>FLAWLESS OFFERINGS</H2>
+<div class="con2">
+<div class="row">
+<div class=col-md-12">
+<table class="table" style="WIDTH:100%;;align="center;" BGCOLOR=#FFF>
+<col width=700px>
+<tr>
+<td rowspan="3"><img src="mechcollage.png" style="width:500px;height:300px"></td>
+</tr>
+<tr>
+<td colspan="3"><i class="fa fa-cog" style="font size:25PX;"></i><font size="4" color=#336699>SHEET PROCESSING</font><H4>Itaqye earerim hic tentyer klzkhjkh mairiters constesasgj aut wrggsrt ktsewq perferimdus doloboris.</h4>_________________________________________________________________________________</td>
+</tr>
+<tr>
+<td colspan="3"><i class="fa fa-cog" style="font size:25px;"></i><font size="4" color=#336699>CONDUCTOR MANUFACTURING</font><H4>Itaqye earerim hic tentyer klzkhjkh mairiters constesasgj aut wrggsrt ktsewq perferimdus doloboris.</h4>_________________________________________________________________________________</td>
+</tr>
+<tr>
+<td rowspan="2"><h2><font color="#3498DB"><p><i>Flawless implemented mission critical solutions to the customer like:</i></p></font></h2><h3><p>Tempoibus autem quibasrdam et aut offices debutus rerum necessitates sape ut et voluptis non resunadae.ut at reicidus voluptatibus.</p></h3></td>
+<td colspan="3"><i class="fa fa-cog" style="font size:25px;"></i><font size="4" color=#336699>BIO MASS PLANTS</font><H4>Itaqye earerim hic tentyer klzkhjkh mairiters constesasgj aut wrggsrt ktsewq perferimdus doloboris.</h4>_________________________________________________________________________________</td>
+</tr>
+<tr>
+<td colspan="3"><i class="fa fa-cog" style="font size:25px;"></i><font size="4" color=#336699>AUTOMOBILE</font><H4>Itaqye earerim hic tentyer klzkhjkh mairiters constesasgj aut wrggsrt ktsewq perferimdus doloboris.</h4>_________________________________________________________________________________</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="con1 text-center">
+<hr />
+<div class="row">
+<div class="col-lg-12">
+<div class="col-md-3">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#"><b>Solutions</b></a></li>
+<li><a href="#"><b>Quality Certifications</b></a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#"><b>Product and services</b></a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#"><b>About us</b></a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<ul class="nav nav-pills nav-stacked">
+<li><a href="#"><b>Product Help</b></a></li>
+<li><a href="#"><b>Home</b></a></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-12">
+<ul class="nav nav-pills nav-justified">
+<li><a href="/">&copy;Flawless Engineering solutions Pvt. Ltd.<br>All rights reserved</a></li>
+<li><a href="#"><center><b>CONNECT WITH US ON</b></center><div class="scrollmenu2"><br>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-google"></a>
+</div></li>
+<li><a href="#">Privacy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
